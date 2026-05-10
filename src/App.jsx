@@ -57,12 +57,12 @@ const App = () => {
 
       <div className='lg:w-[60%] lg:border-l-2 h-screen p-10 overflow-hidden'>
         <h1 className='font-bold text-3xl'>Your Notes</h1>
-        <div className='flex flex-wrap justify-start items-start gap-5 h-[85%] overflow-y-auto mt-5'>
+        <div className='flex flex-wrap justify-start items-start gap-5 h-[85%] overflow-y-auto scrollbar-hide mt-5'>
           {task.map((e,idx)=>{
 
             return   <div key={idx} className=' flex justify-between flex-col items-start relative h-52 bg-cover w-36 py-4 px-6 rounded-2xl overflow-hidden text-black bg-[url(https://i.pinimg.com/736x/25/07/76/250776f63823eaca9ced64fdeeee8c73.jpg)]'>
 
-              <div className='overflow-y-auto flex-1 w-full'>
+              <div className='overflow-y-auto scrollbar-hide flex-1 w-full'>
 
                 <h3 className='leading-tight text-xl font-bold text-black wrap-break-words'>{e.title}</h3>
                 <p className='mt-3 leading-tight font-medium text-gray-500 wrap-break-words'>{e.details}</p>
